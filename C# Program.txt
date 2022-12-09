@@ -1,0 +1,30 @@
+
+using System;
+class HelloWorld 
+{
+  static void Main() 
+  {
+      const int u=3,p=4;
+     int i,a,b;
+     double result,part1,part2;
+     
+     Console.Write("Enter the value of i: ");
+     i=Convert.ToInt32(Console.ReadLine());
+     Console.Write("Enter the value of a: ");
+     a=Convert.ToInt32(Console.ReadLine());
+     Console.Write("Enter the value of b: ");
+     b=Convert.ToInt32(Console.ReadLine());
+     
+     Console.WriteLine("Value of i "+i);
+     Console.WriteLine("Value of a "+a);
+     Console.WriteLine("Value of b "+b);
+     
+     part1 = Math.Sqrt(((double)u*(double)i)*((double)a/(double)b)*(((double)i*(double)i)-1));
+     part2 = Math.Sqrt(((double)p*(double)i)-2)+Math.Sqrt(((double)p*(double)i)-1);
+     //Console.WriteLine(part1);
+     //Console.WriteLine(part2);
+     result=part1/part2;
+     
+     Console.WriteLine(result);
+  }
+}
